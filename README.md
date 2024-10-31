@@ -129,44 +129,48 @@ related to:
 
 ---
 
-## Updating README.md
+### **Getting Started**
 
-`README.md` is a Markdown file that should describe your project. You will
-replace the contents of this `README.md` file with a description of **your**
-actual project.
+Overview of what the project is and what users need to know to begin.
 
-Markdown is not a language that we cover in Flatiron's Software Engineering
-curriculum, but it's not a particularly difficult language to learn (if you've
-ever left a comment on Reddit, you might already know the basics). Refer to the
-cheat sheet in this assignments's resources for a basic guide to Markdown.
+### Installation
 
-### What Goes into a README?
+Instructions for setting up the project, including environment and dependency setup. Include commands where necessary.
 
-This README serves as a template. Replace the contents of this file to describe
-the important files in your project and describe what they do. Each Python file
-that you edit should get at least a paragraph, and each function should be
-described with a sentence or two.
+```bash
+# Example setup commands
+pipenv install
+pipenv shell
 
-Describe your actual CLI script first, and with a good level of detail. The rest
-should be ordered by importance to the user. (Probably functions next, then
-models.)
+## Usage
+- How to run the main program, what it does, and any options or  arguments it takes.
 
-Screenshots and links to resources that you used throughout are also useful to
-users and collaborators, but a little more syntactically complicated. Only add
-these in if you're feeling comfortable with Markdown.
+## Files & Functionality
+- cli.py - Main CLI script that provides an interface to the user. Includes detailed functionality of commands and options available.
+- main.py - Core logic that powers the CLI.
+- models.py - Contains data models and their relationships.
+- config.py - Manages configuration details like database connection and environment variables.
+- utils.py - Utility functions used across the project.
 
----
+## Commands & Functions
+- Each command (if it’s a CLI) and major function should get a brief description. Here’s an example:
 
-## Conclusion
+run(): Main entry function for the application.
+load_data(): Loads data from the specified file and prepares it for processing.
+analyze_results(): Analyzes data based on the input parameters.
 
-A lot of work goes into a good CLI, but it all relies on concepts that you've
-practiced quite a bit by now. Hopefully this template and guide will get you off
-to a good start with your Phase 3 Project.
+## Models
+List and describe any database models, including relationships if applicable.
 
-Happy coding!
+- Employee Model: Represents an employee, with attributes for name, department_id, and salary.
+- Review Model: Stores an annual review for an employee, including year, summary, and employee_id.
 
----
+
 
 ## Resources
+
+- [Setting up a respository - Atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+- [Create a repo- GitHub Docs](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
